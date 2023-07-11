@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@200&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/86e2d886bf.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+        <div class="weather-app">
+          <form class="search-form" id="search-form">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  autofocus="on"
+                  autocomplete="off"
+                  id="city-input"
+                  class="form-control shadow-sm"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="form-control btn btn-primary shadow-sm w-100"
+                />
+              </div>
+              <div class="col-3">
+                <button
+                  class="btn btn-success w-100"
+                  id="current-location-button"
+                >
+                  Current
+                </button>
+              </div>
+            </div>
+          </form>
+
+    
+    <h1 id="city"> </h1> <br/> 
+    <div class="row"> 
+        <span class="col-6">
+        <span class="temperature" id="temperature"></span
+        ><span class="units">°C</span>
+        </span>
+        <span class="col-6">
+        <ul>
+          <li>Humidity: <span id="humidity"></span>%</li>
+          <li>Wind: <span id="wind"></span> km/h</li>
+        </ul>
+        </span>
+        
+    </div>
+    <ul>
+        <li id="date">
+        </li>
+    <li id="description"> <span class="degrees">H:17° L:10°</span></li>
+    </ul>
+    
+</br>
+<div class="days">
+<h2>SAT SUN MON TUES WED </h2>
+</div>
+<div class="weather">
+    <i class="fa-solid fa-cloud fa-beat fa-2xl" style="color: #bfc1c5;"></i>
+    <i class="fa-solid fa-cloud fa-beat fa-2xl" style="color: #bfc1c5;"></i>
+    <i class="fa-solid fa-cloud fa-beat fa-2xl" style="color: #bfc1c5;"></i>
+    <i class="fa-solid fa-cloud fa-beat fa-2xl" style="color: #bfc1c5;"></i>
+    <i class="fa-solid fa-cloud fa-beat fa-2xl" style="color: #bfc1c5;"></i>
+</div>
+<div class="temperatures">
+<h2> 15°   16°   17°   15°   16°  </h2>
+</div>
+    </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+
+</body>
+</html>
