@@ -54,25 +54,28 @@
           </form>
 
     
-    <h1 id="city"> </h1> <br/> 
-    <div class="row"> 
-        <span class="col-6">
-        <span class="temperature" id="temperature"></span
-        ><span class="units">°C</span>
-        </span>
-        <span class="col-6">
+    <h1 id="city"> </h1> 
+    <ul>
+        <li id="date"></li>
+        <li id="description"></li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <div class="d-flex weather-temperature">
+          <img src="https://openweathermap.org/img/wn/01n@2x.png" alt="Clear" id="icon" class="float-left" />
+          <div class="float-left">
+            <strong id="temperature"></strong
+            ><span class="units"> °C</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
         <ul>
           <li>Humidity: <span id="humidity"></span>%</li>
-          <li>Wind: <span id="wind"></span> km/h</li>
+          <li>Wind: <span id="wind"></span> m/h</li>
         </ul>
-        </span>
-        
-    </div>
-    <ul>
-        <li id="date">
-        </li>
-    <li id="description"> <span class="degrees">H:17° L:10°</span></li>
-    </ul>
+      </div>
     
 </br>
 <div class="days">
